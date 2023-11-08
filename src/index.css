@@ -1,0 +1,191 @@
+/* IMPORT FONT - 'OVERPASS' */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+
+body {
+  min-height: 100vh;
+  background-color: hsl(216, 12%, 8%);
+  font-family: 'Overpass', sans-serif;
+}
+
+#root{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  width: 300px;
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+  background-color: hsl(213, 19%, 18%);
+}
+
+.dark-bg {
+  display: flex;
+  
+  width: 40px;
+  height: 40px;
+  background-color: hsl(214, 12%, 25%);
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.rate-result {
+  text-align: center;
+  margin: 1rem 0;
+  background-color: hsl(214, 12%, 25%);
+  border-radius: 50px;
+  padding: 10px;
+}
+
+#rating-list {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 2rem 0;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.rate-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
+  color: hsl(216, 12%, 54%);
+  background-color: hsl(214, 12%, 25%);
+
+  cursor: pointer;
+}
+
+.rate-item:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+#button {
+  cursor: pointer;
+  display: flex;
+  width: 100%;
+  height: 6vh;
+  border: none;
+  border-radius: 50px;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  font-size: 15px;
+}
+
+#button:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.active {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+}
+
+.error {
+  text-align: center;
+  color: #FF6666;
+}
+
+.success-state {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.close {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(25, 97%, 53%);
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.close:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.h2 {
+  margin: 2rem 0 0 0;
+}
+
+/* COLOR HELPERS */
+.primary-orange {
+  color: hsl(25, 97%, 53%);
+  font-size: 14px;
+}
+
+.color-white {
+  color: hsl(0, 0%, 100%);
+}
+
+.color-light-grey {
+  color: hsl(217, 12%, 63%)
+}
+
+.color-medium-grey {
+  color: hsl(216, 12%, 54%);
+}
+
+.color-dark-blue {
+  color: hsl(213, 19%, 18%);
+}
+
+.bg-dark-blue {
+  background-color: hsl(216, 12%, 8%);
+}
+
+/* LG-DEVICES */
+@media (min-width: 1400px) {
+  .card {
+    width: 350px;
+  }
+}
+
+/* Spinner */
+.lds-dual-ring {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+.lds-dual-ring:after {
+  content: " ";
+  display: block;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border-radius: 50%;
+  border: 6px solid #fff;
+  border-color: #fff transparent #fff transparent;
+  animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
