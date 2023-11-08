@@ -12,7 +12,7 @@ export const SuccessContext = createContext({
 export default function SuccessContextProvider({ children }) {
   const [selectedRate, setSelectedRate] = useState("");
   const [isSuccess, setIsSuccess] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
